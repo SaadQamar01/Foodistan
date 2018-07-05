@@ -1,0 +1,81 @@
+page-main {
+
+}
+.homeImage{
+    margin-top: 35px !important;
+    margin-left: -17px !important;
+    margin-right: -17px !important;
+}
+
+.Zoomimage1{
+    
+    transition: .3s;
+    height: 250px !important;
+    
+    
+    
+     }
+    
+    .Zoomimage1:hover{
+        transform:scale(0.96);
+    transition: 5s;
+    overflow-wrap: hidden !important;
+        
+    } 
+
+    .wel{
+        margin-top: 25px !important;
+    }
+
+    .wel:hover{
+
+        color: #0288d1;
+
+    }
+
+    .butt1{
+
+        width: 200px !important;
+        margin-top: 20px !important;
+        margin-left: 55px !important;
+        background: linear-gradient(45deg, #0288d1 0%, #26c6da 100%);
+        background: -webkit-linear-gradient(45deg, #1173A8 0%, #26c6da 100%);
+        
+    }
+
+    .butt1:hover{
+        box-shadow: 0 6px 20px 0 rgba(38, 198, 218, 0.5);
+    }
+
+    .butt2{
+        
+                width: 200px !important;
+                margin-top: 20px !important;
+                margin-left: 55px !important;
+                background: linear-gradient(45deg, #ff6f00 0%, #ffca28 100%);
+                background: -webkit-linear-gradient(45deg, #ff6f00 0%, #ffca28 100%);
+                
+            }
+            .butt2:hover{
+                box-shadow: 0 6px 20px 0 rgba(255, 111, 0, 0.3);
+            }
+
+    .butt3{
+        
+                width: 200px !important;
+                margin-top: 20px !important;
+                margin-left: 55px !important;
+                background: linear-gradient(45deg, #FF5252 0%, #f48fb1 100%);
+                background: -webkit-linear-gradient(45deg, #FF5252 0%, #f48fb1 100%);
+                
+                
+        
+
+                
+            }
+
+            .butt3:hover{
+                box-shadow: 0 6px 20px 0 rgba(244, 143, 177, 0.5);
+            }
+
+            

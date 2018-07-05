@@ -1,0 +1,94 @@
+<ion-header>
+ 
+  <ion-navbar color="topbar">
+
+    <ion-buttons left  >
+<!--       
+      <button ion-buton  menuToggle >
+       
+        <ion-icon class="icons" name="menu"></ion-icon>
+      
+      </button>
+     -->
+
+    </ion-buttons>
+    
+      <ion-buttons left>
+       
+        <button (click)="  log_out()" ion-button icon-only *ngIf="!IsEnabled" >
+      
+          <ion-icon class="icons" name="log-out"></ion-icon>
+      
+        </button>
+      
+      </ion-buttons>
+
+    
+  
+    <!-- <ion-buttons end>
+     
+      <button>
+    
+        <ion-icon class="icons" name="cart"></ion-icon>
+    
+      </button>
+    
+    </ion-buttons>
+     -->
+
+    
+    <ion-title centre>
+    
+      Restaurant App
+    
+    </ion-title>
+
+
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content  class="content-md bg-image bg1"  padding>
+    
+
+<ion-grid class="grid grid">
+   
+  <h2>Select Desired Restaurant</h2>
+
+  <!-- <ion-row class="categories row" (click)=" presentLoading()" *ngFor="let rest of restArray">
+
+    <ion-col class="col" col-6 >
+
+
+      <img class=" ZoomImage" src="../assets/categories/res1.jpg"  (click)="openMainPage(rest._id,rest.name)"   />
+
+
+      <p class="text-over-image">{{rest.name}}</p>
+
+
+    </ion-col>
+
+                
+  </ion-row> -->
+
+<ion-card class="setCard" (click)=" presentLoading()" (click)="openMainPage(rest._id,rest.name)" *ngFor="let rest of restArray">
+
+<ion-row>
+
+<img class="ZoomImage" src="../assets/categories/res1.jpg" />
+
+
+
+</ion-row>
+
+<ion-row>
+
+  <p class="setText"> {{rest.name}} </p>
+
+</ion-row>
+
+</ion-card>
+
+</ion-grid>  
+
+</ion-content>

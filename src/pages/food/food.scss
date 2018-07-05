@@ -1,0 +1,54 @@
+page-food {
+
+}
+.card-md2 {
+    margin: 10px;
+    min-width: 105% !important;
+    // border-radius: 2px;
+    // width: calc(100% - 20px);
+    margin-left: -10px !important;
+    max-height: 45% !important;
+    font-size: 1.4rem;
+   
+ 
+}
+
+.card-md2:hover{
+    
+        box-shadow: 0px 6px 20px #cfcfcf !important;
+        border-radius: 4px !important;
+    
+    }
+    .img2{
+        width: 120px !important;
+        height: 120px !important;
+        border-radius:3px; 
+        // margin-left: -5px !important;
+        margin-top: 5px !important;
+    }
+    
+    .setOrd{
+        margin-top:15px !important;
+        float: left;
+        height: 35px !important;
+        background: linear-gradient(45deg, #ff6f00 0%, #ffca28 100%);
+        background: -webkit-linear-gradient(45deg, #ff6f00 0%, #ffca28 100%);
+
+    }
+    .setOrd:hover{
+        box-shadow: 0 6px 20px 0 rgba(255, 111, 0, 0.3) !important;
+        
+    }
+        .setOrd1{
+        margin-top:15px !important; 
+        border: 5px !important;   
+        float: right;
+        height: 35px !important;
+        background: linear-gradient(45deg, #0288d1 0%, #26c6da 100%);
+        background: -webkit-linear-gradient(45deg, #1173A8 0%, #26c6da 100%);
+    }
+
+    .setOrd1:hover{
+        box-shadow: 0 6px 20px 0 rgba(38, 198, 218, 0.5);
+        
+    }

@@ -1,0 +1,390 @@
+<!--
+  Generated template for the SaladsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="topbar">
+    <ion-buttons>
+      
+    <button (click)="returnCategories()" class="back-button1 bar-button1 bar-button-md1 back-button-md1 bar-button1-default bar-button-default-md1 show-back-button1" ion-buton="bar-button1"   >
+
+      <span class="button-inner1">
+
+       <ion-icon class=" icons1  back-button1-icon icon icon-md back-button-icon-md1 ion-md-arrow-back" name="round-back"></ion-icon>
+     
+<span class="back-button-text1 back-button-text-md1"></span>
+
+      </span>
+
+<div class="button-effect"></div>
+
+      </button>
+    
+    </ion-buttons>
+
+    <ion-title>Salads</ion-title>
+
+
+    <ion-buttons end>
+      
+       <button>
+     
+         <ion-icon class="icons" name="cart"></ion-icon>
+     
+       </button>
+     
+     </ion-buttons>
+  
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="bg" padding>
+
+
+  <div class="fixed-content" style="margin-top: 56px;"></div>
+
+  <ion-searchbar class="seabar" autocomplete="true" placeholder="Search Item Name" (ionInput)="getItems($event)"></ion-searchbar>
+  
+<!-- 
+  <div>
+      
+           
+        <ion-list>
+             
+          <ion-item *ngFor="let item of items">
+              
+              {{ item }}
+           </ion-item>
+  
+          </ion-list>
+  
+        </div> -->
+  
+    <!-- <mat-card class="card card-md2 card1" >
+     
+    <mat-list class="list list-md">
+         
+      <ion-item class="item item-block2 item-md1" >
+        
+        <ion-thumbnail item-left>
+               
+        <img class="img1" src="../assets/saladsimages/salad1.jpg">
+             
+      </ion-thumbnail>
+        
+        <ion-label class="label label-md">
+              
+             
+        <p  class="heading" style="color:#ffff !important; font-size:15px; font:bold;" > CHICKEN SALAD</p>
+          
+        <p  style="color:#fdfd; font-family:sans-serif; margin-top:10px;" >This Chicken Avocado Chopped Salad makes a delicious meal.<span><b>Price:</b><b style="color:brown;">$5</b></span> </p>
+        
+      </ion-label>
+       
+        </ion-item>
+      
+    </mat-list>
+    </mat-card> -->
+    
+    <mat-card class="card card-md1"  >
+      
+            <mat-list  class="list list-md">
+    
+              
+                <ion-item  class="item item-block1 item-md1"  >
+                    
+                    <ion-thumbnail   item-left="">
+                    
+                        <img class="img1" src="../assets/saladsimages/salad1.jpg">
+                
+                    </ion-thumbnail>
+                       
+                    <ion-label class="label label-md"> 
+                      
+
+                      <p  class="heading" style="color:#000000 !important; font-size:15px;" >CHICKEN SALAD</p>
+      
+
+                      <p  style="color:#777777; font-family:sans-serif; margin-top:5px;" >This Chicken Salad makes a delicious meal.<span><b>Price:</b><b style="color:brown;">$5</b></span></p>
+                    
+              
+                  </ion-label>
+               
+            
+        
+        <div class="button-effect"></div>
+    
+    </ion-item>
+       
+    </mat-list>
+      
+        </mat-card>
+
+
+<!-- 
+  <div class="fixed-content" style="margin-top: 56px;"></div>
+  
+    <mat-card class=" card-md2 card1">
+     
+    <mat-list class="list list-md">
+         
+      <ion-item class="item item-block2 item-md1" >
+        
+        <ion-thumbnail item-left>
+               
+        <img class="img1" src="../assets/saladsimages/salad3.jpg">
+             
+      </ion-thumbnail>
+        
+        <ion-label class="label label-md">
+              
+             
+        <p  class="heading" style="color:#ffffff !important; font-size:15px; font:bold;" >GARDEN SALAD</p>
+          
+        <p  style="color:#fdfd; font-family:sans-serif; margin-top:10px;" >Mixed greens, tomato, shredded carrots, red cabbage.<span><b>Price:</b><b style="color:brown;">$6.7</b></span> </p>
+        
+      </ion-label>
+       
+     </ion-item>
+      
+    </mat-list>
+    
+  </mat-card> -->
+
+
+  <mat-card class="card card-md1">
+    
+          <mat-list  class="list list-md">
+  
+            
+              <ion-item  class="item item-block1 item-md1"  (click)="openSaladsPage()">
+                  
+                  <ion-thumbnail   item-left="">
+                  
+                      <img class="img1" src="../assets/saladsimages/salad3.jpg">
+              
+                  </ion-thumbnail>
+                     
+                  <ion-label class="label label-md"> 
+                    
+
+                    <p  class="heading" style="color:#000000 !important; font-size:15px;" >GARDEN SALAD</p>
+    
+
+                    <p  style="color:#777777; font-family:sans-serif; margin-top:5px;" >Mixed greens,tomato,redcabbage.<span><b>Price:</b><b style="color:brown;">$6.7</b></span></p>
+                  
+            
+                </ion-label>
+             
+          
+       
+      <div class="button-effect"></div>
+  
+  </ion-item>
+     
+  </mat-list>
+    
+      </mat-card>
+
+<!--
+  <div class="fixed-content" style="margin-top: 56px;"></div>
+  
+    <mat-card class="card card-md2 card1">
+     
+    <mat-list class="list list-md">
+         
+      <ion-item class="item item-block2 item-md1" >
+        
+        <ion-thumbnail item-left>
+               
+        <img class="img1" src="../assets/saladsimages/salad4.jpg">
+             
+      </ion-thumbnail>
+        
+        <ion-label class="label label-md">
+              
+             
+        <p  class="heading" style="color:#ffffff !important; font-size:15px; font:bold;" >Fiddlehead Salad</p>
+          
+        <p  style="color:#fdfd; font-family:sans-serif; margin-top:10px;" >	
+            
+            Delicious, and fun way to enjoy this North East delicacy<span><b>Price:</b><b style="color:brown;">$6</b></span> </p>
+        
+      </ion-label>
+       
+        </ion-item>
+      
+    </mat-list>
+    
+  </mat-card> -->
+
+  <mat-card class="card card-md1">
+    
+          <mat-list  class="list list-md">
+  
+            
+              <ion-item  class="item item-block1 item-md1"  (click)="openSaladsPage()">
+                  
+                  <ion-thumbnail   item-left="">
+                  
+                      <img class="img1" src="../assets/saladsimages/salad4.jpg">
+              
+                  </ion-thumbnail>
+                     
+                  <ion-label class="label label-md"> 
+                    
+
+                    <p  class="heading" style="color:#000000 !important; font-size:15px;" >Fiddlehead Salad</p>
+    
+
+                    <p  style="color:#777777; font-family:sans-serif;" >Delicious,fun way to enjoy delicacy.<span><b>Price:</b><b style="color:brown;">$6</b></span></p>
+                  
+            
+                </ion-label>
+             
+          
+       
+      <div class="button-effect"></div>
+  
+  </ion-item>
+     
+  </mat-list>
+    
+      </mat-card>
+
+
+  <!-- <div class="fixed-content" style="margin-top: 56px;"></div>
+  
+    <mat-card class="card card-md2 card1">
+     
+    <mat-list class="list list-md">
+         
+      <ion-item class="item item-block2 item-md1" >
+        
+        <ion-thumbnail item-left>
+               
+        <img class="img1" src="../assets/saladsimages/salad5.jpg">
+             
+      </ion-thumbnail>
+        
+        <ion-label class="label label-md">
+              
+             
+        <p  class="heading" style="color:#ffffff !important; font-size:15px; font:bold;" >TACO SALAD</p>
+          
+        <p  style="color:#fdfd; font-family:sans-serif; margin-top:10px;" >Crispy Nachos Piled High w/Taco Meat, Refried Beans, Black Olives, Lettuce, Tomatoes, Cheddar.<span><b>Price:</b><b style="color:brown;">$9.25</b></span> </p>
+        
+      </ion-label>
+       
+        </ion-item>
+      
+    </mat-list>
+    
+  </mat-card> -->
+
+  <mat-card class="card card-md1">
+    
+          <mat-list  class="list list-md">
+  
+            
+              <ion-item  class="item item-block1 item-md1"  (click)="openSaladsPage()">
+                  
+                  <ion-thumbnail   item-left="">
+                  
+                      <img class="img1" src="../assets/saladsimages/salad5.jpg">
+              
+                  </ion-thumbnail>
+                     
+                  <ion-label class="label label-md"> 
+                    
+
+                    <p  class="heading" style="color:#000000 !important; font-size:15px;" >TACO SALAD</p>
+    
+
+                    <p  style="color:#777777; font-family:sans-serif;" >Crispy Nachos Piled Meat, Refried Bean, Cheddar.<span><b>Price:</b><b style="color:brown;">$6</b></span></p>
+                  
+            
+                </ion-label>
+             
+          
+       
+      <div class="button-effect"></div>
+  
+  </ion-item>
+     
+  </mat-list>
+    
+      </mat-card>
+
+
+  <!-- <div class="fixed-content" style="margin-top: 56px;"></div>
+  
+    <mat-card class="card card-md2 card1">
+     
+    <mat-list class="list list-md">
+         
+      <ion-item class="item item-block2 item-md1" >
+        
+        <ion-thumbnail item-left>
+               
+        <img class="img1" src="../assets/saladsimages/salad6.jpg">
+             
+      </ion-thumbnail>
+        
+        <ion-label class="label label-md">
+              
+             
+        <p  class="heading" style="color:#ffffff !important; font-size:15px; font:bold;" >Fruity Grilled Nectarine Salad</p>
+          
+        <p  style="color:#fdfd; font-family:sans-serif; margin-top:10px; margin-top:10px;" >Christmas Eve buffet or for any other festive occasion!<span><b>Price:</b><b style="color:brown;">$10</b></span> </p>
+        
+      </ion-label>
+       
+       </ion-item>
+      
+    </mat-list>
+    
+  </mat-card> -->
+
+  <mat-card class="card card-md1">
+    
+          <mat-list  class="list list-md">
+  
+            
+              <ion-item  class="item item-block1 item-md1"  (click)="openSaladsPage()">
+                  
+                  <ion-thumbnail   item-left="">
+                  
+                      <img class="img1" src="../assets/saladsimages/salad6.jpg">
+              
+                  </ion-thumbnail>
+                     
+                  <ion-label class="label label-md"> 
+                    
+
+                    <p  class="heading" style="color:#000000 !important; font-size:15px;" >Fruity Salad</p>
+    
+
+                    <p  style="color:#777777; font-family:sans-serif;" >Christmas Eve buffet or for any other festive occasion.<span><b>Price:</b><b style="color:brown;">$6</b></span></p>
+                  
+            
+                </ion-label>
+             
+          
+       
+      <div class="button-effect"></div>
+  
+  </ion-item>
+     
+  </mat-list>
+    
+      </mat-card>
+  
+
+
+</ion-content>

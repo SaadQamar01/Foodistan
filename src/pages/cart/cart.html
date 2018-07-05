@@ -1,0 +1,111 @@
+<!--
+  Generated template for the CartPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="topbar">
+    <ion-buttons>
+
+
+
+      <button (click)="returnCatPage()" class="back-button1 bar-button1 bar-button-md1 back-button-md1 bar-button1-default bar-button-default-md1 show-back-button1"
+        ion-buton="bar-button1">
+    
+          <span class="button-inner1">
+    
+           <ion-icon class=" icons1  back-button1-icon icon icon-md back-button-icon-md1 ion-md-arrow-back" name="round-back"></ion-icon>
+         
+          <span class="back-button-text1 back-button-text-md1"></span>
+    
+          </span>
+    
+        <div class="button-effect"></div>
+    
+          </button>
+
+    </ion-buttons>
+
+    <ion-title>Quick Order</ion-title>
+    <ion-buttons end>
+
+      <button>
+       
+           <ion-icon class="icons" name="cart">    <sup *ngIf="addCardTrue">{{itemQuantity}}</sup>           </ion-icon>
+       
+         </button>
+
+    </ion-buttons>
+
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+  <ion-card class="setCardLoc">
+
+    <ion-item>
+
+      <ion-avatar class="Avatar" item-start>
+          
+        <img  src="../assets/categories/salad.jpg" />
+          
+      </ion-avatar>
+
+      <h2 class="SetName" [(ngModel)]="dummydata1" ngDefaultControl> {{dummydata1}}</h2>
+
+    </ion-item>
+
+    <img class="setImage" src="../assets/categories/salad.jpg" />
+
+    <div>
+
+    <button class="setButt1" ion-button (click)="add()" circle>
+
+    <ion-icon name="add"></ion-icon>
+  
+    </button>
+
+      <span class="setQty1"> {{itemQuantity}}</span>
+
+    <button class="setButt2" ion-button (click)="subtract()">
+  
+      <ion-icon name="remove"></ion-icon>
+  
+    </button>
+
+    <button class="setButt" ion-button (click)="addToCard()" (click)="sendQuickOrder()" >
+   
+      <ion-icon name='cart' is-active="false"></ion-icon>
+  
+      Add To Cart
+  
+    </button>
+
+    </div>
+
+    <br />
+
+    <div ><b class="setcol">Price:</b> <span class="setcol">{{price}}</span></div>
+    
+    <br />
+
+    <div ><b class="setcol">Total Amount :</b><span class="setcol">{{totalAmmount}}</span></div>
+    
+
+    <!-- <ul>
+
+  <li [(ngModel)]="price" >Price: {{price}}</li>
+
+
+</ul> -->
+
+  </ion-card>
+
+</ion-content>

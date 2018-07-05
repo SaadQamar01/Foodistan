@@ -1,0 +1,65 @@
+<!--
+  Generated template for the QuickOrderListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar  color="topbar">
+
+      <ion-buttons>
+          
+    
+    
+        <button (click)="returnMainPage()" class="back-button1 bar-button1 bar-button-md1 back-button-md1 bar-button1-default bar-button-default-md1 show-back-button1" ion-buton="bar-button1"   >
+    
+          <span class="button-inner1">
+    
+           <ion-icon class=" icons1  back-button1-icon icon icon-md back-button-icon-md1 ion-md-arrow-back" name="round-back"></ion-icon>
+         
+    <span class="back-button-text1 back-button-text-md1"></span>
+    
+          </span>
+    
+    <div class="button-effect"></div>
+    
+          </button>
+        
+        </ion-buttons>
+    
+
+    <ion-title>Quick Order List</ion-title>
+  
+  
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+
+
+
+
+
+<!-- <div *ngFor="let order of quickOrderList;let i=index ">
+  
+<p><span>{{i}}</span><span>Price:{{order.price}}</span> <span>Quantity:{{order.quantity}}</span><span>FoodName:{{order.foodId.name}}</span></p>
+
+<br/>
+
+</div> -->
+
+<div *ngFor="let order of quickOrderList;let i=index ">
+<ion-item class="item-medium">  
+<h2 ><span class="head">Order No : {{i+1}}</span></h2>
+</ion-item>
+<ion-item class="item-medium"><b>FoodName:</b><span class="sp">{{order.foodId.name}}</span></ion-item>
+<ion-item class="item-medium"><b>Quantity:</b><span class="sp">{{order.quantity}}</span></ion-item>
+<ion-item class="item-medium"><b>Price:</b><span class="sp">{{order.price}}</span></ion-item>
+<ion-item class="item-medium"><b>DeliverCharges:</b><span class="sp">{{order.deliveryCharges}}</span></ion-item>
+
+</div>
